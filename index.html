@@ -4,8 +4,13 @@
 <head>
 	<title>IEEE DTU</title>
 	<meta charset="utf-8">
+	<meta property="og:type" content="website" />
+    <meta property='og:title' content='IEEE DTU || STUDENT CHAPTER'/>
+    <meta property='og:image' content='https://ieeedtu.in/images/ieee.png'/>
+    <meta property='og:description' content='IEEE DTU Student Branch , under the aegis of IEEE Global, is the oldest student branch in Delhi Section with an illustrious history of over three decades.'/>
+    <meta property='og:url' content='https://ieeedtu.in/'/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+	<link rel="icon" href="./images/ieee.png" type="image">
 	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
@@ -23,7 +28,7 @@
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href='./lib/main.css' rel='stylesheet' />
-    <script src='./lib/main.js'></script>
+	<script src='./lib/main.js'></script>
 </head>
 
 <body>
@@ -88,7 +93,8 @@
 						<div class="icon"><span><img src="images/cs.png"></span></div>
 						<div class="media-body">
 							<h3 class="heading mb-3">IEEE DTU CS Chapter</h3>
-							<p>The IEEE Computer Society is the premier source for information, inspiration, and
+							<p style="text-align: justify;">The IEEE Computer Society is the premier source for
+								information, inspiration, and
 								collaboration in Computer Science and Engineering.
 								IEEE DTU has become affiliated to the IEEE Computer Society and has established its
 								presence in the ever-expanding world of Computer Science.
@@ -105,7 +111,8 @@
 						</div>
 						<div class="media-body">
 							<h3 class="heading mb-3">IEEE DTU PES Chapter</h3>
-							<p>The Power & Energy Society (PEA) provides the world's largest forum for sharing latest in
+							<p style="text-align: justify;">The Power & Energy Society (PEA) provides the world's
+								largest forum for sharing latest in
 								technological developments in the electric power industry,
 								for developing standards that guide the development and construction of equipment and
 								systems,
@@ -121,7 +128,8 @@
 						<div class="icon"><span><img src="images/wie.png"></span></div>
 						<div class="media-body">
 							<h3 class="heading mb-3">IEEE DTU WIE Chapter</h3>
-							<p> Women in Engineering (WIE) is a global network of IEEE members a devoted to promoting
+							<p style="text-align: justify;"> Women in Engineering (WIE) is a global network of IEEE
+								members a devoted to promoting
 								the advancement of women in science and retention of disciplines globally.
 								The vision it holds is that of a vibrant community of women and men collectively using
 								their diverse talents of humanity.
@@ -146,34 +154,37 @@
 								<span class="subheading">Be Part of the IEEE-DTU Family</span>
 								<h3>Join Now</h3>
 							</div>
-							<form action="#" class="request-form ftco-animate">
+							<form action="/" class="request-form ftco-animate" id="registeration-form" method="POST">
 								<div class="form-group">
-									<input type="text" class="form-control" placeholder="First Name">
+									<input type="text" class="form-control" placeholder="First Name" id="name" required>
 								</div>
 								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Last Name">
+									<input type="text" class="form-control" placeholder="Last Name" id="lastname" required>
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Email" id="email" required>
 								</div>
 								<div class="form-group">
 									<div class="form-field">
 										<div class="select-wrap">
 											<div class="icon-arr"><span class="ion-ios-arrow-down"></span></div>
-											<select name="" id="" class="form-control">
+											<select name="" id="year" class="form-control" required>
 												<option value="">Select Your Year of Study</option>
-												<option value="">First Year</option>
-												<option value="">Second Year</option>
-												<option value="">Third Year</option>
-												<option value="">Fourth Year</option>
+												<option value="1" style="color:black">First Year</option>
+												<option value="2" style="color:black">Second Year</option>
+												<option value="3" style="color:black">Third Year</option>
+												<option value="4" style="color:black">Fourth Year</option>
 											</select>
 										</div>
 									</div>
 								</div>
 								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Phone">
+									<input type="text" class="form-control" placeholder="Phone" id="phone" required>
 								</div>
-								<div class="form-group">
-									<textarea name="" id="" cols="30" rows="2" class="form-control"
+								<!-- <div class="form-group">
+									<textarea name="" id="message" cols="30" rows="2" class="form-control"
 										placeholder="Message"></textarea>
-								</div>
+								</div> -->
 								<div class="form-group">
 									<input type="submit" value="Join Now" class="btn btn-secondary py-3 px-4">
 								</div>
@@ -693,18 +704,18 @@
 			</div>
 			<div class="row no-gutters block-9">
 				<div class="col-md-6 order-md-last d-flex">
-					<form action="#" class="bg-light p-5 contact-form">
+					<form action="#" class="bg-light p-5 contact-form" id="contact-form">
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Your Name">
+							<input type="text" class="form-control" placeholder="Your Name" id="contact-name">
 						</div>
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Your Email">
+							<input type="text" class="form-control" placeholder="Your Email" id="contact-email">
 						</div>
 						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Subject">
+							<input type="text" class="form-control" placeholder="Subject" id="contact-subject">
 						</div>
 						<div class="form-group">
-							<textarea name="" id="" cols="30" rows="7" class="form-control"
+							<textarea name="" id="contact-message" cols="30" rows="7" class="form-control"
 								placeholder="Message"></textarea>
 						</div>
 						<div class="form-group">
@@ -860,79 +871,107 @@
 	<script src="js/main.js"></script>
 	<script>
 		let calendarEl = document.getElementById('calendar')
-        calendar = new FullCalendar.Calendar(calendarEl, {
-          themeSystem: 'standard',
-          headerToolbar: {
-            left: 'prev,next today',
-            center: 'title',
-            right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
-          },
-          initialDate: '2020-09-12',
-          weekNumbers: true,
-          navLinks: true, // can click day/week names to navigate views
-          editable: true,
-          selectable: true,
-          nowIndicator: true,
-          dayMaxEvents: true, // allow "more" link when too many events
-          // showNonCurrentDates: false,
-          events: [
-            {
-              title: 'All Day Event',
-              start: '2020-09-01'
-            },
-            {
-              title: 'Long Event',
-              start: '2020-09-07',
-              end: '2020-09-10'
-            },
-            {
-              groupId: 999,
-              title: 'Repeating Event',
-              start: '2020-09-09T16:00:00'
-            },
-            {
-              groupId: 999,
-              title: 'Repeating Event',
-              start: '2020-09-16T16:00:00'
-            },
-            {
-              title: 'Conference',
-              start: '2020-09-11',
-              end: '2020-09-13'
-            },
-            {
-              title: 'Meeting',
-              start: '2020-09-12T10:30:00',
-              end: '2020-09-12T12:30:00'
-            },
-            {
-              title: 'Lunch',
-              start: '2020-09-12T12:00:00'
-            },
-            {
-              title: 'Meeting',
-              start: '2020-09-12T14:30:00'
-            },
-            {
-              title: 'Happy Hour',
-              start: '2020-09-12T17:30:00'
-            },
-            {
-              title: 'Dinner',
-              start: '2020-09-12T20:00:00'
-            },
-            {
-              title: 'Birthday Party',
-              start: '2020-09-13T07:00:00'
-            },
-            {
-              title: 'Click for Google',
-              url: 'http://google.com/',
-              start: '2020-09-28'
-            }
-          ]
-        });
-        calendar.render();
+		calendar = new FullCalendar.Calendar(calendarEl, {
+			themeSystem: 'standard',
+			headerToolbar: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
+			},
+			initialDate: '2020-09-12',
+			weekNumbers: true,
+			navLinks: true, // can click day/week names to navigate views
+			editable: true,
+			selectable: true,
+			nowIndicator: true,
+			dayMaxEvents: true, // allow "more" link when too many events
+			// showNonCurrentDates: false,
+			events: [
+				{
+					title: 'All Day Event',
+					start: '2020-09-01'
+				},
+				{
+					title: 'Long Event',
+					start: '2020-09-07',
+					end: '2020-09-10'
+				},
+				{
+					groupId: 999,
+					title: 'Repeating Event',
+					start: '2020-09-09T16:00:00'
+				},
+				{
+					groupId: 999,
+					title: 'Repeating Event',
+					start: '2020-09-16T16:00:00'
+				},
+				{
+					title: 'Conference',
+					start: '2020-09-11',
+					end: '2020-09-13'
+				},
+				{
+					title: 'Meeting',
+					start: '2020-09-12T10:30:00',
+					end: '2020-09-12T12:30:00'
+				},
+				{
+					title: 'Lunch',
+					start: '2020-09-12T12:00:00'
+				},
+				{
+					title: 'Meeting',
+					start: '2020-09-12T14:30:00'
+				},
+				{
+					title: 'Happy Hour',
+					start: '2020-09-12T17:30:00'
+				},
+				{
+					title: 'Dinner',
+					start: '2020-09-12T20:00:00'
+				},
+				{
+					title: 'Birthday Party',
+					start: '2020-09-13T07:00:00'
+				},
+				{
+					title: 'Click for Google',
+					url: 'http://google.com/',
+					start: '2020-09-28'
+				}
+			]
+		});
+		calendar.render();
+	</script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script>
+
+		$('#registeration-form').submit((event) => {
+			event.preventDefault()
+			Email.send({
+				SecureToken: "4b32814e-8f7a-4d5f-91dc-e4e3609df55e",
+				To: 'ishan4220@gmail.com',
+				From: $('#email').val(),
+				Subject: 'New Membership Registeration',
+				Body: `Mr./Mrs. ${$('#name').val()} ${$('#lastname').val()} wants to be apart of IEEE family.Phone- ${$('#phone').val()},current year of study - ${$('#year').val()}`
+			}).then(
+				message => alert('Email Sent Successfully')
+			);
+		})
+		$('#contact-form').submit((event) => {
+			event.preventDefault()
+			Email.send({
+				SecureToken: "4b32814e-8f7a-4d5f-91dc-e4e3609df55e",
+				To: 'ieeedtu.contact@gmail.com',
+				From: $('#contact-email').val(),
+				Subject: `${$('#contact-subject').val()}`,
+				Body: `Mr./Mrs. ${$('#contact-name').val()} ${$('#contact-lastname').val()} sent you following message.Message - ${$('#conatact-message').val()}.`
+			}).then(
+				message => alert('Email Sent Successfully')
+			);
+		})
 	</script>
 
 </body>
