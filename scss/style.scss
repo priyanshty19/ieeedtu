@@ -1102,6 +1102,7 @@ textarea.form-control {
 #map {
 	// height: 400px;
 	width: 100%;
+	// overflow: visible;
 	@include media-breakpoint-down(sm) {
 		height: 300px;
 	}

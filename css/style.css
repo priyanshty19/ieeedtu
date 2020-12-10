@@ -9535,3 +9535,16 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+    .inline-block {
+      display: inline;
+   }
+
+   
+.aligncenter {
+    text-align: center;
+}
+
+.posn {
+  text-align: center;
+}
